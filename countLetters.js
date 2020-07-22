@@ -35,5 +35,3 @@ const countLetters = string => {
   }
   return output;
 };
-
-console.log(countLetters(lowerCase(noSpaces(`lIgHtHouse in the house`))))
