@@ -30,11 +30,13 @@ const map = function(array, callback) {
   return results;
 }
 
-// const results1 = map(words, word => word[0]);
+const results1 = map(words, word => word[0]);
 
 // const numbers = [1, 2, 3, 4, 5, 6]
-// const results2 = map(numbers, number => number[0])
+// // const results2 = map(numbers, number => number[0])
+// const results2 = map(numbers, number => number * 2)
 
+// console.log(results2)
 // assertArraysEqual(results1, ["ground", "control", "to", "major", "tom"])
 // assertArraysEqual(results1, ["g", "c", "t", "m", "t"])
 // assertArraysEqual(results2, [1, 2, 3, 4, 5, 6]) // false! numbers are not strings, running number[0] returns undefined.
