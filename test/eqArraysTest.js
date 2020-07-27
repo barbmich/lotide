@@ -9,5 +9,3 @@ assertEqual(eqArrays(arr1, arr2), true);
 const arr3 = [1, 'b', 3, false];
 
 assertEqual(eqArrays(arr1, arr3), false);
-
-
