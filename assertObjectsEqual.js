@@ -1,16 +1,4 @@
-const eqObjects = function(object1, object2) {
-  if (Object.keys(object1).length !== Object.keys(object2).length) {
-    return false;
-  } else {
-    for (let key in object1) {
-      if (object1[key] !== object2[key]) {
-        return false;
-      }
-    }
-  }
-  return true;
-};
-
+const eqObjects = require('./eqObjects');
 
 // FUNCTION IMPLEMENTATION
 const assertObjectsEqual = function(actual, expected) {
@@ -21,6 +9,8 @@ const assertObjectsEqual = function(actual, expected) {
     return console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
+
+module.exports = assertObjectsEqual;
 
 // assertObjectsEqual({a: 1, b: "3"}, {b: "3", a: 1})
 // assertObjectsEqual({a: "1", b: "3"}, {b: "3", a: 1})

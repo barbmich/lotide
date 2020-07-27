@@ -1,19 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    if (typeof actual === 'string') {
-      return console.log(`✅ Assertion Passed! "${actual}" === "${expected}"`);
-    } else {
-      return console.log(`✅ Assertion Passed! ${actual} === ${expected}`);
-    }
-  } else {
-    if (typeof actual === 'string') {
-      return console.log(`🛑 Assertion Failed! "${actual}" !== "${expected}"`);
-    } else {
-      return console.log(`🛑 Assertion Failed! ${actual} !== ${expected}`);
-    }
-  }
-};
-
 const noSpaces = string => {
   let output = string.split(' ').join('');
   return output;
@@ -25,6 +9,8 @@ const lowerCase = string => {
 };
 
 const countLetters = string => {
+  string = noSpaces(string);
+  string = lowerCase(string);
   let output = {};
   for (let char of string) {
     if (output[char]) {
@@ -35,3 +21,5 @@ const countLetters = string => {
   }
   return output;
 };
+
+module.exports = countLetters;
