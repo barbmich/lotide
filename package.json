@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@username/lotide",
   "version": "1.0.0",
-  "description": "* 1st project for the Lighthouse Labs bootcamp",
+  "description": "* 1st project for the Lighthouse Labs bootcamp. Library based off Lotide, contains several functions with similar (albeit simplified) behavior. See the README.md for further information on each function.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/barbmich/lotide.git"
   },
-  "author": "",
+  "author": "Michele Barbiero",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/barbmich/lotide/issues"
